@@ -1,0 +1,7 @@
+tqdm
+pandas
+selenium
+matplotlib
+numpy
+vt
+requests
