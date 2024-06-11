@@ -52,3 +52,7 @@ We're using AnyRun's API to automatically submit the samples for an analysis on 
 **Note**: You can only submit a single task at a time and you need to wait until it is finished before sending another one, hence this part can take quite some time depending on the size of the dataset.
 
 Once we have submitted all the samples, we need to retrieve the results from the analysis. The `taskFetcher.py` script parses the previously stored taskIds and retrieves the information in JSON format and stores the result in the respective folder. Now we can parse this information and extract the necessary information with the `versionParser.py` script and finally use the `versionAnalyser.py` script to extract the results we need. The fields which are extracted and analysed can be freely changed or added in the respective script by having a look at the JSON which is retrieved from the analysis.
+
+## Malware samples
+
+The samples can be found in the Dataset folder. The samples are archived by family and the password for each archive is `infected`. WannaCry was split into 2 separate folders, as the combined archive was too big to be uploaded to GitHub. When downloading the samples, they can simply be combined into a single folder once the download and extraction were completed.
